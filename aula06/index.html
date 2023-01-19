@@ -15,9 +15,12 @@
 <body>
     <h1>meu primeiro codigo javascript</h1>
     <script>
-        alert('olá mundo !') // abre um balão de fala
-        confirm('esta gostando de js ?') //janela com o botão ok
-        prompt('qual é o seu nome?') //janela com espaço para responder a pergunta
+        var nome = window.prompt('qual é o seu nome?') //janela com espaço para responder a pergunta
+        window.alert('é um prazer te conhecer ' + nome)
+       var n1 = Number.parseInt(window.prompt(nome + ' digite um número'))
+       var n2 = Number.parseInt(window.prompt(nome + 'digite mais um numero'))
+       var s = n1 + n2
+       window.alert(`a soma entre  ${n1} e ${n2} dois números é ${s}`)
     </script>
 </body>
 </html>
